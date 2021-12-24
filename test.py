@@ -20,8 +20,8 @@ def send_mail(report):
     yag = yagmail.SMTP(user="3281502659@qq.com", password="pamhwavwqiofdbdf", host='smtp.qq.com',encoding='GBK')
     subject = "自动化测试报告"
     contents = "自动化用例已执行完毕，详细报告请查看附件"
-    res=['2393022053@qq.com',
-		'2265817908@qq.com']
+    res=['2393022053@qq.com']
+		#'2265817908@qq.com']
     yag.send(res, subject, contents, report)
     print("邮件已经发送成功！")
 
